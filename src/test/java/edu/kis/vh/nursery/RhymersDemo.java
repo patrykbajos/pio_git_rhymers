@@ -7,6 +7,7 @@ class RhymersDemo {
     public static final int COUNTING_START = 1;
     public static final int COUNTING_STOP = 15;
     public static final int HANOI_RHYMER_I = 3;
+    public static final int COUNT_RAND_MAX = 20;
 
     public static void main(String[] args) {
         final RhymersFactory factory = new DefaultRhymersFactory();
@@ -26,7 +27,7 @@ class RhymersDemo {
 
         java.util.Random rn = new java.util.Random();
         for (int i = COUNTING_START; i < COUNTING_STOP; i++) {
-            rhymers[HANOI_RHYMER_I].countIn(rn.nextInt(20));
+            rhymers[HANOI_RHYMER_I].countIn(rn.nextInt(COUNT_RAND_MAX));
         }
 
         for (int i = 0; i < rhymers.length; i++) {
