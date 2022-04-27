@@ -4,10 +4,10 @@ import edu.kis.vh.nursery.factory.DefaultRhymersFactory;
 import edu.kis.vh.nursery.factory.RhymersFactory;
 
 class RhymersDemo {
-    public static final int COUNTING_START = 1;
-    public static final int COUNTING_STOP = 15;
-    public static final int HANOI_RHYMER_I = 3;
-    public static final int COUNT_RAND_MAX = 20;
+    private static final int COUNTING_START = 1;
+    private static final int COUNTING_STOP = 15;
+    private static final int HANOI_RHYMER_I = 3;
+    private static final int COUNT_RAND_MAX = 20;
 
     public static void main(String[] args) {
         final RhymersFactory factory = new DefaultRhymersFactory();
