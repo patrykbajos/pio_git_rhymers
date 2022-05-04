@@ -13,6 +13,7 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
         while (!temp.callCheck())
             countIn(temp.countOut());
 
+        // TODO: Poprawic niewydajna metode pobierania najstarszego elementu, wymusza ona dwa kopiowania
         return ret;
     }
 }

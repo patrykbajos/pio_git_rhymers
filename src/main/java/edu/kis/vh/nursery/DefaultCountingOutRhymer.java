@@ -13,6 +13,7 @@ public class DefaultCountingOutRhymer {
     }
 
     public boolean callCheck() {
+        // TODO: Sugeruje poprawic nazwe metody na 'isEmpty'
         return total == EMPTY_INITIALIZER;
     }
 
@@ -21,6 +22,7 @@ public class DefaultCountingOutRhymer {
     }
 
     protected int peekaboo() {
+        // TODO: Sugeruje zmienic nazwe metody na 'top'
         if (callCheck())
             return EMPTY_INITIALIZER;
         return numbers[total];
