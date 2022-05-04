@@ -9,6 +9,7 @@ public class IntLinkedList {
         private Node prev;
         private Node next;
 
+        // TODO: Parametr o nazwie 'i' nie niesie ze soba znaczenia, sugeruje 'value'
         public Node(int i) {
             this.value = i;
         }
@@ -43,6 +44,7 @@ public class IntLinkedList {
      * @param i Element do umieszczenia na stosie
      */
     public void push(int i) {
+        // TODO: Parametr o nazwie 'i' mylacy, sugerowana nazwa 'value' lub 'element'
         if (last == null)
             last = new Node(i);
         else {
@@ -65,6 +67,7 @@ public class IntLinkedList {
      * @return Wartosc boolean mowiaca o zapelnieniu stosu
      */
     public boolean isFull() {
+        // TODO: Funkcja zawsze zwraca false, nie ma sensu jej istnienie
         return false;
     }
 
