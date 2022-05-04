@@ -1,5 +1,8 @@
 package edu.kis.vh.nursery.list;
 
+/**
+ * Klasa implementuje wzorzec LIFO na typie danych int
+ */
 public class IntLinkedList {
     private static class Node {
         private int value;
@@ -35,6 +38,10 @@ public class IntLinkedList {
     private Node last;
     private int i;
 
+    /**
+     * Funkcja umieszcza element przekazany w i na czubek stosu
+     * @param i Element do umieszczenia na stosie
+     */
     public void push(int i) {
         if (last == null)
             last = new Node(i);
@@ -45,20 +52,36 @@ public class IntLinkedList {
         }
     }
 
+    /**
+     * Funkcja zwraca czy stos jest pusty
+     * @return Wartosc true/false mowiaca czy stos jest pusty
+     */
     public boolean isEmpty() {
         return last == null;
     }
 
+    /**
+     * Funkcja zwracajaca prawde dla pelnego stosu
+     * @return Wartosc boolean mowiaca o zapelnieniu stosu
+     */
     public boolean isFull() {
         return false;
     }
 
+    /**
+     * Funkcja zwraca wartosc elementu na czubku stosu bez zdejmowania go
+     * @return Wartosc elementu na czubku stosu
+     */
     public int top() {
         if (isEmpty())
             return EMPTY_SIZE;
         return last.getValue();
     }
 
+    /**
+     * Funkcja zdejmuje i zwraca element z czubka stosu
+     * @return Wartosc elementu na czubku stosu
+     */
     public int pop() {
         if (isEmpty())
             return EMPTY_SIZE;
@@ -66,5 +89,4 @@ public class IntLinkedList {
         last = last.getPrev();
         return ret;
     }
-
 }
