@@ -74,5 +74,7 @@ public class RhymersJUnitTest {
         result = rhymer.countOut();
         Assert.assertEquals(EMPTY_STACK_VALUE, result);
     }
+
+    // 14. wszystkie testy wykonuja sie poprawnie, brak zmian
 }
 // alt + strzałka zmienia karty w edytorze
